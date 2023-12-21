@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Lato&family=Mulish:wght@300&family=Open+Sans&family=Poppins:wght@300;400&family=Raleway:wght@500&family=Roboto+Slab&family=Roboto:ital@0;1&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weather{
+    max-width: 480px;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: lightslategrey;
+    border-radius: 10px;
+}
+
+.search{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input{
+    flex:0.8;
+    padding: 1rem 1rem 0.5rem 1rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor:text;
+}
+
+input::placeholder{
+    color: #fff;
+}
+
+
+.search button{
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button i{
+   font-size: 30px;
+   color: #fff;   
+}
+
+.error{
+    color: #fff;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.Data{
+    width: 100%;
+    display: none;
+}
+.info{
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info img{
+    height: 150px;
+    width: 150px;
+}
+
+.info p{
+    font-size: 3rem;
+    font-family: 'Roboto';
+}
+
+.info h1{
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+
+.stats{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3rem;
+}
+
+.humidity{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.humidity img{
+    height: 50px;
+    width: 50px;
+}
+
+.humidity p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+.windspeed{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.windspeed img{
+    height: 50px;
+    width: 50px;
+}
+
+.windspeed p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media (max-width:480px){
+    .weather{
+        padding-inline: 0;
+    }
+    .search input{
+        flex: 1;
+    }
+
+    .stats{
+        padding-inline: 1rem;
+    }
+
+    .humidity img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .windspeed img{
+        height: 40px;
+        width: 40px;
+    }
+
+    .humidity p{
+        font-size: 1rem;
+    }
+
+    .windspeed p{
+        font-size: 1rem;
+    }
+}
